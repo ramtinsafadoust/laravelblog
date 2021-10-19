@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+<<<<<<< HEAD
 use App\Http\Requests\ArticleRequest;
 use App\Models\Article;
 use Illuminate\Contracts\View\View;
+=======
+>>>>>>> 685098e (first app)
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -27,7 +30,11 @@ class ArticleController extends Controller
      */
     public function create()
     {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 685098e (first app)
 
         return view('admin.articles.create');
     }
@@ -38,6 +45,7 @@ class ArticleController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+<<<<<<< HEAD
     public function store(ArticleRequest $request)
     {
 
@@ -52,6 +60,11 @@ class ArticleController extends Controller
         ]);
 
         return View('index');
+=======
+    public function store(Request $request)
+    {
+        //
+>>>>>>> 685098e (first app)
     }
 
     /**
@@ -60,6 +73,7 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+<<<<<<< HEAD
     public function show(Article $article)
     {
 
@@ -67,6 +81,11 @@ class ArticleController extends Controller
             "title"=>$article->title,
             "body"=>$article->body
         ]);
+=======
+    public function show($id)
+    {
+        //
+>>>>>>> 685098e (first app)
     }
 
     /**
