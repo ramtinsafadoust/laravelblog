@@ -34,7 +34,7 @@
                 <td>{{ $post->title }}</td>
                 <td>{{ $post->id }}</td>
                 <td>{{ $post->view }}</td>
-                <td><a href="{{route('usersarticles',$post->user->id)}}" class="btn btn-info" style="font-size: small">{{$post->user->name}}</a></td>
+                <td><a href="{{route('usersarticles',$post->user->id)}}" class="btn btn-info" style="font-size: small">{{$post->user->name}}=>{{count($post->user->articles)}}</a></td>
                 <td>
                     <form action="/admin/articles/user/{{$post->user->id}}"  method="GET">
 
