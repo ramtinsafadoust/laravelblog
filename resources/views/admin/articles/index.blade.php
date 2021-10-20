@@ -12,10 +12,10 @@
                     <th>ردیف</th>
                     <th>عنوان</th>
                     <th>شناسه</th>
-                    <th>تعداد بازدید</th>
+                    <th> بازدید</th>
+                    <th >عملیات</th>
 
-                    <th>به روز رسانی</th>
-                    <th>حذف</th>
+
 
                 </tr>
 
@@ -35,7 +35,7 @@
                 <td>
                     <form action="{{route('articles.edit',$post->id)}}"  method="GET">
 
-                        <button class="btn btn-primary" type="submit">به روز رسانی</button>
+                        <button class="btn btn-primary" type="submit" ><i class="fa fa-pen-nib fa-1x  ">  </i></button>
                     </form>
                 </td>
 
@@ -46,9 +46,11 @@
                         @csrf
                         @method('delete')
 
-                        <button class="btn btn-danger" type="submit">حذف</button>
+                        <button class="btn btn-danger" type="submit" ><i class="fa fa-trash-alt fa-1x  ">  </i></button>
                     </form>
                 </td>
+
+                <td>   </td>
 
 
 
