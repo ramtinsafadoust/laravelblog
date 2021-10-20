@@ -19,6 +19,7 @@ class CreateArticlesTable extends Migration
             $table->String('slug');
             $table->text('body');
             $table->Integer('view')->default(0);
+            $table->unsignedBigInteger('user_id');
 
             $table->timestamps();
         });

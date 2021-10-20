@@ -17,15 +17,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'index@index')->name('index');
 
+
+
+Route::get('admin/articles/user/{id}', 'UserArticlesController@usersarticles')->name('usersarticles');
+
+
 Auth::routes();
-
-
-
 Route::namespace('Admin')->prefix('admin')->group(function () {
-    
+
+
+
     Route::resource('articles', 'ArticleController');
 
 });
 
 
- 
+
